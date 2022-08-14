@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/eventos/novo', [EventController::class, 'index'] );
+Route::get('/eventos/listar', [EventController::class, 'listar'] );
+Route::get('/usuarios/cadastrar', [UserController::class, 'create']);
+Route::get('/usuarios', [UserController::class, 'index']);
