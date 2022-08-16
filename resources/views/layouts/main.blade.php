@@ -26,7 +26,8 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
-                        <img alt="SGE" src="/images/logo.png">
+                      <ion-icon name="boat-outline" class="logo" id="logo"></ion-icon>
+                      <span class="logo">SGE</span>
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -48,6 +49,7 @@
                 </div>
             </nav>
        </header>
+      <!-- <img src="/images/im1.png" alt="SGE, Sistema de Gestão de Eventos" class="banner-ing" /> -->
        <main>
             <div client="container-fluid">
                 <div class="row">
@@ -57,6 +59,8 @@
        </main>
        <footer>SGE &copy; <?php  echo date('Y-m-d');  ?></footer>
        <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
