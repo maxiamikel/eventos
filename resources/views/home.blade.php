@@ -22,7 +22,7 @@
                         <p class="privado">Entrada: {{$evento->privado}}</p>
                         <p class="publico">P&uacute;blico: {{$evento->publico}}</p>
                         <p class="custo">Pre&ccedil;o: R$. {{$evento->custo}}</p>
-                        <a href="" class="btn btn-primary"> Detalhes </a>
+                        <a href="" class="btn btn-primary"><ion-icon name="list-outline"></ion-icon> Detalhes </a>
                      </div>
                 </div>
             @endforeach

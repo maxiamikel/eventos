@@ -22,3 +22,5 @@ Route::get('/eventos/novo', [EventController::class, 'index'] );
 Route::get('/eventos/listar', [EventController::class, 'listar'] );
 Route::get('/usuarios/cadastrar', [UserController::class, 'create']);
 Route::get('/usuarios', [UserController::class, 'index']);
+
+Route::get('/eventos',[EventController::class,'store']);

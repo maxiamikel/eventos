@@ -18,14 +18,13 @@ header {
 }
 
 .btn-primary {
-    background-color: #ccc;
     border: 2px solid #999;
     color: #333;
 }
 
 .btn-primary:hover {
     background-color: #eee;
-    border: 2px solid #ddd;
+    border: 2px solid #F2A340;
     color: #333;
 }
 
@@ -117,6 +116,13 @@ header {
     margin-bottom: 25px;
 }
 
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
 .custo {
     color: #F2A339;
     font-weight: bold;
@@ -135,6 +141,20 @@ header {
     font-weight: bold;
     font-size: 12px;
     text-transform: lowercase;
+}
+
+ion-icon {
+    color: #F2A340;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+.btn ion-icon {
+    color: #F2A340;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: -2px;
 }
 
 footer {

@@ -31,19 +31,19 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Home</a>
+                            <a href="/" class="nav-link"><ion-icon name="home-outline"></ion-icon> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/eventos/novo" class="nav-link">Adicionar Evento</a>
+                            <a href="/eventos/novo" class="nav-link"><ion-icon name="add-outline"></ion-icon> Evento</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/eventos/listar" class="nav-link">Ver Eventos</a>
+                            <a href="/eventos/listar" class="nav-link"><ion-icon name="receipt-outline"></ion-icon> Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/usuarios" class="nav-link">Usuarios</a>
+                            <a href="/usuarios" class="nav-link"><ion-icon name="newspaper-outline"></ion-icon> Usuarios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/usuarios/cadastrar" class="nav-link">Criar Usuario</a>
+                            <a href="/usuarios/cadastrar" class="nav-link"><ion-icon name="person-add-outline"></ion-icon> Usuario</a>
                         </li>
                     </ul>
                 </div>
@@ -57,10 +57,11 @@
                  </div>
             </div>
        </main>
-       <footer>SGE &copy; <?php  echo date('Y-m-d');  ?></footer>
+       <footer>SGE &copy; <?php  echo date('Y-m-d');  ?><ion-icon name="logo-whatsapp"></ion-icon> <ion-icon name="logo-twitter"></ion-icon> <ion-icon name="logo-wechat"></ion-icon></footer>
        <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
+

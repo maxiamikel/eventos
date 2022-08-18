@@ -9,3 +9,14 @@
     <a href="/eventos/listar"> Listar eventos</a>
 
 @endsection
+
+@foreach($eventos as $evento)
+        <p>{{$evento->titulo}}</p>
+        <p>{{$evento->descricao}}</p>
+        <p>{{$evento->data}}</p>
+        <p>{{$evento->hora}}</p>
+        <p>{{$evento->privado}}</p>
+        <p>{{$evento->endereco}}</p>
+        <p>{{$evento->custo}}</p>
+        <hr>
+    @endforeach
