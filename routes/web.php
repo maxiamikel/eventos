@@ -20,7 +20,10 @@ use App\Http\Controllers\UserController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/eventos/novo', [EventController::class, 'index'] );
 Route::get('/eventos/listar', [EventController::class, 'listar'] );
+Route::get('/eventos/{id}', [EventController::class, 'show']);
+
+
 Route::get('/usuarios/cadastrar', [UserController::class, 'create']);
 Route::get('/usuarios', [UserController::class, 'index']);
 
-Route::get('/eventos',[EventController::class,'store']);
+Route::post('/eventos',[EventController::class,'store']);
