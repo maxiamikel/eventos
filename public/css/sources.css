@@ -1,0 +1,216 @@
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color: #FFF;
+    border-bottom: 1px solid #eee;
+}
+
+.row {
+    margin: 0px;
+}
+
+.container-fluid {
+    margin: 0px
+}
+
+.btn-primary {
+    background-color: #F2A230;
+    border-color: #F2A340;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 5px 20px;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #333;
+}
+
+#navbar a:hover {
+    color: #F3A400;
+}
+
+#search-container {
+    background-image: url("/images/im3.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #333;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 9px;
+}
+
+#events-container .title-2 {
+    padding: 5px;
+    color: #333;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#events-container img {
+    max-height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#events-container .card {
+    max-width: 25%;
+    min-width: 24%;
+    border-radius: 11px;
+    flex: 1 1 0;
+    padding: 0;
+    margin: 5px;
+}
+
+.form-group label {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#logo {
+    color: #F2A340;
+    font-size: 34px;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: #353E50;
+    text-align: center;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*****Show info **/
+
+#show-info {
+    padding: 30px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#show-info h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+#itens-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#itens-list li {
+    display: flex;
+}
+
+#show-info ion-icon {
+    color: #F2A340;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#col-md-6 {
+    padding-top: 30px;
+}
+
+#container-details {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#image-container {
+    padding: 10px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#show-container {
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+
+#form-container {
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f1f1f1;
+    min-width: 30%;
+}
+
+.form-group-control {
+    background-color: #353E50;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 14px;
+    display: flex;
+}
+
+
+/***Reserva**/
+
+.info-reserva {
+    background-color: #184d23;
+    justify-content: space-between;
+    display: flex;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px;
+    align-items: center;
+}
+
+.info-reserva .info {
+    align-items: center;
+    text-align: center;
+}
+
+.fechado {
+    background-color: #ff0000;
+    color: #333;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.aberto {
+    color: #fff;
+    font-size: 12px;
+    background-color: #507759;
+    padding: 5px;
+}

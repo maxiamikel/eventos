@@ -2,7 +2,7 @@
 @section('title', 'SGE, Criar novo evento')
 @section('content')
 
-<div class="container col-md-6 offest-md-3">
+<div class="container col-md-4 offest-md-3" id="form-container">
 <h2>Criar novo evento</h2>
 
     <form action="/eventos" method="POST" enctype="multipart/form-data">
@@ -22,7 +22,7 @@
         <div class="form-group">
             <label for="publico">N&uacute;mero de participantes: </label>
             <input type="number" name="ingresso" class="form-control" id="titulo" placeholder="120 pessoas" >
-            <input type="hidden" name="status"  id="titulo" value="Aberto" >
+            <input type="hidden" name="status"  id="titulo" value="Fechado" >
             <input type="hidden" name="vendido"  id="titulo" value="0" >
         </div>
         <!-- <div class="form-group">
@@ -38,17 +38,38 @@
         </div>
         <div class="form-group">
             <label for="">Endere&ccedil;o do evento</label>
-            <select name="id_endereco" id="endereco" class="form-control">
+            <select name="endereco_id" id="endereco" class="form-control">
                 <option value="0" >Selecionae uma opção</option>
                 <option value="1">Endereco 1</option>
                 <option value="2">Endereco 2</option>
+                <option value="3">Endereco 3</option>
             </select>
-        </div>
+            
+        </div><a href="/enderecos/novo">Adicione</a>
         <div class="form-group">
             <label for="custo">Pre&ccedil;o do evento: </label>
             <input type="number" name="preco_ingresso" class="form-control" id="titulo" placeholder="0.00" >
         </div>
         <div class="form-group">
+            <label for="adicione-itens">Incluir os itens adicionais do evendos</label>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Cerveja gratis"> Cerveja gr&aacute;tis
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Brindes"> Brindes
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Artista ao vivo"> Artista ao vivo
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Churrasco gratis"> Churrasco gr&aacute;tis
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Pasteis"> Pasteis
+            </div>
+
+        </div>
+        <div class="form-group-control">
         <input type="submit" name="custo" class="btn btn-primary" id="btn" value='Salvar no banco' > 
         </div>
     </form>

@@ -10,8 +10,16 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $eventos = Eventos::all();
+        $search = request('search');
+        if($search){
+            $eventos = Eventos::where([
+                ['titulo','like', '%'.$search.'%']
+            ])->get();
+        }else{
+            $eventos = Eventos::all();
+        }
+        
 
-        return view('home',['eventos'=>$eventos]);
+        return view('home',['eventos'=>$eventos], ['search' =>$search]);
     }
 }

@@ -91,11 +91,11 @@ header {
 }
 
 #card-container .card {
-    flex: 1 1 24%;
-    max-width: 26%;
+    flex: 1 1 0;
+    max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: .5%;
+    margin: 5px;
 }
 
 #card-container #card img {
@@ -185,4 +185,21 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+
+/*Show*/
+
+#image-container,
+#show-info {
+    margin-top: 2px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#itens-list {
+    list-style: none;
+    padding-left: 0;
 }

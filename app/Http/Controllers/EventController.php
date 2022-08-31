@@ -25,13 +25,13 @@ class EventController extends Controller
 
         $evento->titulo = $request->titulo;
         $evento->descripcao = $request->descripcao;
-        $evento->id_endereco = $request->id_endereco;
+        $evento->endereco_id = $request->endereco_id;
         $evento->ingresso = $request->ingresso;
         $evento->vendido = $request->vendido;
         $evento->status = $request->status;
         $evento->data_evento = $request->data_evento;
         $evento->hora_evento = $request->hora_evento;
-        //$evento->data_publicacao = $request->data_publicacao;
+        $evento->itens = $request->itens;
         $evento->preco_ingresso = $request->preco_ingresso;
 
         if($request->hasFile('foto') && $request->file('foto')->isvalid()){
@@ -53,9 +53,14 @@ class EventController extends Controller
 
     public function show($id)
     {
-        //$endereco = Endereco::findOrFail($id);
         $eventos = Eventos::findOrFail($id);
-        return view('eventos.show', ['evento' =>$eventos]);
+        $ids = $eventos->endereco_id;
+        $enderecos = Endereco::where([
+            ['id','=', $ids]
+        ])->get();
+        
+         $endereco1 = Endereco::where('id', $eventos->endereco_id)->first()->toArray();
+        return view('eventos.show', ['evento' =>$eventos,'endereco' =>$endereco1]);
     }
 }
 

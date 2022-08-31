@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->text('descripcao');
             $table->date('data_evento');
-            $table->integer('id_endereco');
+            $table->integer('id_endereco'); 
             $table->integer('vendido');
             $table->string('foto');
             $table->float('preco_ingresso');
