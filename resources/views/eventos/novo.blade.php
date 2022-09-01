@@ -22,7 +22,7 @@
         <div class="form-group">
             <label for="publico">N&uacute;mero de participantes: </label>
             <input type="number" name="ingresso" class="form-control" id="titulo" placeholder="120 pessoas" >
-            <input type="hidden" name="status"  id="titulo" value="Fechado" >
+            <input type="hidden" name="status"  id="titulo" value="Aberto" >
             <input type="hidden" name="vendido"  id="titulo" value="0" >
         </div>
         <!-- <div class="form-group">

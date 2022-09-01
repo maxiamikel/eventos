@@ -22,6 +22,7 @@ Route::get('/usuarios/cadastrar', [UserController::class, 'create']);
 Route::get('/usuarios', [UserController::class, 'index']);
 
 Route::post('/eventos',[EventController::class,'store']);
+Route::post('/eventos', [ReservasController::class, 'store']);
 
 Route::middleware([
     'auth:sanctum',

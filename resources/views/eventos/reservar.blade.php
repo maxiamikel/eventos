@@ -21,7 +21,7 @@
 
    </div>
 
-<form action="#">
+<form action="/eventos" method="POST">
 @csrf
     <div class="form-group">
       
@@ -35,7 +35,7 @@
      </div>
      <div class="form-group">
         <label for="email">Informe seu e-mail </label>
-        <input type="text" name="txtemail" class="form-control" id="titulo" placeholder="e-mail" >
+        <input type="email" name="txtEmail" class="form-control" id="titulo" placeholder="e-mail" >
      </div>
      <div class="form-group">
         <label for="telefone">Informe seu Telefone </label>
@@ -43,10 +43,10 @@
      </div>
      <div class="form-group-control">
      @if($evento->status == 'Aberto')
-        <input type="submit" name="custo" class="btn btn-primary" id="btn" value='Reservar' > 
-        <input type="button" name="custo" class="btn btn-danger" id="btn" value='Cancelar' > 
+        <input type="submit" name="btnSubmit" class="btn btn-primary" id="btn" value='Reservar' > 
+        <input type="button" name="btnCancel" class="btn btn-danger" id="btn" value='Cancelar' > 
       @else
-      <input type="button" name="custo" class="btn btn-danger" id="btn" value='Cancelar' > 
+      <input type="button" name="btnCancel" class="btn btn-danger" id="btn" value='Cancelar' > 
       @endif
      </div>
 

@@ -13,16 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('eventos', function (Blueprint $table) {
+        Schema::create('enderecos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('titulo');
-            $table->text('descripcao');
-            $table->date('data_evento');
-            $table->integer('endereco_id'); 
-            $table->integer('vendido');
-            $table->string('foto');
-            $table->float('preco_ingresso');
+            $table->string('logaduro');
+            $table->string('numero');
+            $table->string('cidade');
+            $table->string('estado');
+            $table->string('complemento');
         });
     }
 
@@ -33,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('eventos');
+        Schema::dropIfExists('enderecos');
     }
 };

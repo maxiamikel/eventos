@@ -113,6 +113,18 @@ footer {
 }
 
 
+/******MSG******/
+
+.msg {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
 /*****Show info **/
 
 #show-info {
@@ -198,6 +210,12 @@ footer {
 .info-reserva .info {
     align-items: center;
     text-align: center;
+}
+
+.info-reserva h3 {
+    background-color: #184d23;
+    font-size: 16px;
+    color: #fff;
 }
 
 .fechado {
